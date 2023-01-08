@@ -342,6 +342,15 @@ a:hover{
     line-height: 25px;
     color: gray;
 }
+.detail-item-link-box{
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 3px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 
 @media only screen and (max-width: 670px) {
    
@@ -395,6 +404,46 @@ a:hover{
     .contact-box-logos .iconify {
         font-size: 60px !important;
     }
+
+    /* Detail pages */
+    .project-box-content .iconify{
+        font-size: 20px;
+    }
+    .detail-item-name{
+        font-size: 40px;
+    }
+    .detail-item-descriptions video {
+        width: 95vw;
+        height: auto;
+        max-height: 65vh;
+    }
+    .detail-item-details{
+        /* text-align: left; */
+        padding: 0;
+    }
+    .detail-item-details h5{
+        font-size: 30px;
+    }
+    ul.tech-list{
+        padding-left: 0;
+    }
+    .detail-item-summary{
+        font-size: 20px;
+        text-align: center;
+    }
+    .project-description{
+        font-size: 16px;
+    }
+    .detail-item-link-box{
+        font-size: 20px;
+    }
+    .project-description{
+        width: 80vw;
+    }
+
+    /* ul.tech-list .iconify{
+        font-size: 20px;
+    } */
 }
 
 @media only screen and (max-width: 480px) {
