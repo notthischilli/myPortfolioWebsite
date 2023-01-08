@@ -1,6 +1,6 @@
 body{
     font-family: 'inter', sans-serif;
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -24,9 +24,8 @@ a.item-link:hover{
 .intro-box{
     display: flex;
     height: 100vh;
-    padding-left: 20%;
-    padding-right: 20%;
     position: relative;
+    justify-content: center;
 }
 
 .intro-box-content{
@@ -41,7 +40,8 @@ a.item-link:hover{
     letter-spacing: 13px;
     padding-left: 0;
     padding-right: 0;
-    font-size: 3.6vw;
+    /* font-size: 3.6vw; */
+    font-size: 50px;
 }
 
 .intro-box-content #intro-title{
@@ -101,7 +101,8 @@ span.blue-text{
 }
 
 .title-text{
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: 55px;
     letter-spacing: 15px;
     margin-bottom: 5%;
     text-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -113,7 +114,8 @@ ul.item-list{
 
 ul.item-list li{
     list-style: none;
-    font-size: 4vw;
+    /* font-size: 4vw; */
+    font-size: 42px;
     padding: 20px 0px;
     /* font-family: 'Raleway', sans-serif; */
     font-weight: 400;
@@ -130,6 +132,17 @@ ul.item-list li{
 
 .item-list:hover .app-preview-box img{
     visibility: visible;
+}
+
+.about-me-description{
+    background-color: antiquewhite;
+    font-size: 2vw;
+    color: #a19f9f;
+    padding: 30px;
+}
+
+nav > ul{
+    padding-left: 0;
 }
 
 /* Contact Box */
@@ -187,7 +200,8 @@ ul.item-list li{
 }
 
 .small-title-text{
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
+    font-size: 30px;
     font-weight: 400; 
     text-shadow: rgb(0 0 0 / 24%) 0px 1px 1px;
 }
@@ -265,7 +279,8 @@ button{
 }
 
 small{
-    font-size: 1vw;
+    /* font-size: 1vw; */
+    font-size: 15px;
     letter-spacing: 6px;
     color: #a19f9f;
 }
@@ -283,7 +298,8 @@ nav ul{
 }
 nav ul li {
     padding: 3vw;
-    font-size: 2vw;
+    /* font-size: 2vw; */
+    font-size: 28px;
 }
 nav ul li a{
     color: #000000;
@@ -313,3 +329,82 @@ a:hover{
     color: #0a63a2;
 }
 
+.detail-item-summary{
+    padding: 20px;
+}
+.project-description{
+    background-color: antiquewhite;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 25px;
+    color: gray;
+}
+
+@media only screen and (max-width: 670px) {
+   
+   #intro-text{
+    text-align: left;
+    padding-left: 40px;
+   }
+   small{
+    padding-left: 42px;
+    font-size: 12px;
+    }
+   nav{
+    display: none;
+   }
+   
+   .title-text{
+    font-size: 50px;
+   }
+   .project-box {
+    padding-left: 8px;
+    height: auto;
+   }
+   ul.item-list li {
+    font-size: 38px;
+   }
+
+   .contact-box{
+    height: auto;
+    justify-content: flex-start;
+    padding-left: 10px;
+   }
+   
+   .small-title-text{
+    font-size: 40px;
+    text-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    color: #000000;
+    letter-spacing: 10px;
+    font-weight: bold;
+   }
+    .contact-box-logos{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+    }
+    #emailLink, #githubLink{
+        flex: 1;
+    }
+    .contact-box{
+        text-align: left;
+    }
+    .contact-box-logos .iconify {
+        font-size: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+   
+    .intro-box-content{
+     text-align: left;
+     padding-left: 0px;
+    }
+    small{
+        padding-left: 42px;
+        font-size: 12px;
+    }
+ }
