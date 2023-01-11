@@ -22,32 +22,42 @@
 
             <div class="detail-item-descriptions">
                 <div class="detail-item-img">
-                    <img class="app-img" src="./public/FeBooks.png" alt="" height="50%">
+                    <video controls src="./public/LittleNews.webm" autoplay="on"></video>
                 </div>
             
                 <div class="detail-item-details">
                     <div class="detail-item-tech">
                         <h5>Technologies Used</h5>
                         <ul class="tech-list">
-                            <li><iconify-icon icon="akar-icons:react-fill" width="50"></iconify-icon></li>
-                            <li><iconify-icon icon="logos:express" style="font-size: 40px;"></iconify-icon></li>
-                            <li><iconify-icon icon="la:node" style="font-size: 80px;"></iconify-icon></li>
-                            <li><iconify-icon icon="logos:mongodb" style="font-size: 45px;"></iconify-icon></li>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-reactjs"></span></li>
+                            <li><span class="iconify" data-icon="logos:express"></span></li>
+                            <li><span class="iconify" data-icon="vscode-icons:file-type-node"></span></li>
+                            <li><span class="iconify" data-icon="logos:mongodb"></span></li>
+                            <li><span class="iconify" data-icon="logos:puppeteer"></span></li>
                         </ul>
                     </div>
                     <div class="detail-item-summary">
-                        Bit sized news for easy consumption.
+                       A little news site scrapper.
                     </div>
+                    <div class="project-description">
+                       I wanted to try scrapping the internet for contents so I tried using cheerio JS and pupeeteer JS.
+                       The deployment of the app was the most frustrating part, as I spent 3 days trying to figure out why
+                       pupeteerJS wasn't working properly. But I'm glad I kept at it and managed to solve the problem.
+                       When the user goes to the scrap link, the site starts scrapping from the <a href="https://bbc.com/news">BBC website</a>,
+                       the articles can be saved in MongoDB, deleted later and using saved reference the article will be fetched from the source again.
+                       It does take some time though.
+                       The site is deployed @ <a href="render.com">render. </a> 
+                     </div>
                     <div class="detail-item-link-box">
-                        <a href="">View Demo</a>
+                        <a target="_blank" href="https://littlenews.onrender.com/">View Demo</a>
+                        <a target="_blank" href="https://github.com/notthischilli/littleNews">Github Repo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="index.js" defer></script>
 <script>
